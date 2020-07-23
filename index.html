@@ -1,0 +1,110 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!doctype HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><h1 id="title">FCC: SUrvery Form</h1></title>
+     <link rel="stylesheet" href="styles.css">
+   
+  </head>
+  <main id="main">
+    <header class="header">
+      <h1 id="title">FCC Survey Form</h1>
+      <p id="description"><i>A survey to figure out who is your Twice bias </i></p>
+    </header>
+      
+    
+<form id="survey-form">
+  <div class="form-group">
+  <label id="name-label" for="name">Name</label>
+ 
+  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+  
+  </div>
+ 
+  <div class="form-group">
+  <label id="email-label" for="email">Email</label>
+  
+  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+  </div>
+ 
+  <div class="form-group">
+  <label id="number-label" for="number">Age</label>
+  
+  <input type="number" name="age" id="number" min="0" max="100" class="form-control" placeholder="Age" required />
+  </div>
+  
+  <div class="form-group">
+  <p>Which Twice member is your bias?</p>
+  
+    <select id="dropdown" name="member" class="form-control" required>
+      <option disabled="" selected="" value="">Select your bias</option>
+      <option value="Nayeon">Nayeon</option>
+      <option value="Jeongyeon">Jeongyeon</option>
+      <option value="Momo">Momo</option>
+      <option value="Sana">Sana</option>
+      <option value="Mina">Mina</option>
+      <option value="Jihyo">Jihyo</option>
+      <option value="Dahyun">Dahyun</option>
+    <option value="Chaeyeong">Chaeyeong</option>
+    <option value="Tzuyu">Tzuyu</option>
+    </select>
+    
+    
+    
+  </div>
+  <div class="form-group">
+  <p>Would recommend Twice to others?</p>
+    
+    <label>
+      <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked=""> Definitely
+    </label>
+    <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+  </div> 
+    <div class="form-group">
+  <p>Which songs by Twice would recommend to others? (Check all that apply)</p>
+      
+      <label>
+        <input name ="prefer" value ="signal" type="checkbox" class="input-checkbox">Signal
+      </label>
+      <label>
+        <input name ="prefer" value ="Dance the Night Away" type="checkbox" class="input-checkbox">Dance the Night Away
+      </label>
+      <label>
+        <input name ="prefer" value ="More & More" type="checkbox" class="input-checkbox">More & More
+      </label>
+      <label>
+        <input name ="prefer" value ="TT" type="checkbox" class="input-checkbox">TT
+      </label>
+      <label>
+        <input name ="prefer" value ="Feel Special" type="checkbox" class="input-checkbox">Feel Special
+      </label>
+      <label>
+        <input name ="prefer" value ="Fancy" type="checkbox" class="input-checkbox">Fancy
+      </label>
+  </div>
+  <div class="form-group">
+  <p>Any other songs you would recommend to others?</p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your recommendations here"></textarea>
+  </div>
+  <div class="form-group">
+  <button type="submit" id="submit" class="submit-button">
+    Submit</div>
+</button>
+    </form>
+  </main>
+  
+  
+</html>
